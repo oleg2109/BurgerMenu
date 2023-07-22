@@ -1,0 +1,101 @@
+body {
+    margin: 50px 0 0 10px;
+}
+
+.wrapper {
+    width: 390px;
+    margin: auto;
+    height: 100vh;
+    border-radius: 25px;
+    background-color:floralwhite;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: inherit;
+    position: relative;
+}
+
+.btnMenu {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+    right: 0;
+}
+.icon1{
+top: 0;
+}
+.icon2 {
+    top: 10px;
+}
+
+.icon3 {
+    top: 20px;
+}
+
+.open {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.change {
+    transform: rotate(45deg) scaleX(1.25) translateY(15px); 
+    transition: 0.5s;
+}
+
+.change2 {
+    transform: rotate(-45deg) scaleX(1.25) translateY(-15px);
+    transition: 0.5s;
+}
+
+.changemenu{
+    transform: translateX(10px);
+    transition: 0.5s;
+}
+
+.menu{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.meniList{
+    list-style: none;
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.menuItem{
+     padding: 10px;
+     border-bottom: 1px solid black;
+    
+}
+
+
+
