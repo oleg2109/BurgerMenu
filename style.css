@@ -61,16 +61,30 @@ top: 0;
     transition: 0.5s;
 }
 
+.close{
+    opacity: 1;
+    transition: 0.5s;
+}
+
 .change {
-    transform: rotate(45deg) scaleX(1.25) translateY(15px); 
+    transform: rotate(45deg)  translateY(14px); 
     transition: 0.5s;
 }
 
 .change2 {
-    transform: rotate(-45deg) scaleX(1.25) translateY(-15px);
+    transform: rotate(-45deg)  translateY(-15px);
     transition: 0.5s;
 }
 
+.backchange{
+    transform: rotate(0deg)  translateY(0px); 
+    transition: 0.5s;
+}
+
+.backchange2{
+    transform: rotate(0deg)  translateY(0px);
+    transition: 0.5s;
+}
 .changemenu{
     transform: translateX(10px);
     transition: 0.5s;

@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-const wrapper = document.querySelector('.wrapper'); 
-console.log(wrapper);   
+const wrapper = document.querySelector('.wrapper');  
 const btn = document.querySelector('.btnMenu');
 const line1 = document.querySelector('.icon1');
 const line2 = document.querySelector('.icon2');
@@ -14,7 +13,15 @@ line2.classList.toggle('open');
 line3.classList.toggle('change2');
 btn.classList.toggle('changemenu');
 
-
+if(!line1.classList.contains('change')){
+    line1.classList.add('backchange');
+    line2.classList.add('close');
+    line3.classList.add('backchange2');
+} else {
+   line1.classList.remove('backchange');
+   line2.classList.remove('close');
+   line3.classList.remove('backchange2');
+}
 
 
 if(btn.classList.contains('changemenu')){
@@ -43,7 +50,9 @@ if(btn.classList.contains('changemenu')){
         transform: `translateY(${-menuHeight - headerHeigth}px)` 
     }], 300);
     menu.style = `transform: translateY(${-menuHeight - headerHeigth}px)`;
-    
+
+   
+
     setTimeout(() => {
         wrapper.removeChild(menu);
     }, 300);
